@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAE7E7"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="388dp"
+        android:layout_height="488dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="PRESIONA EN GRABAR"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnGrabar"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:layout_marginStart="125dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/stop_rec"
+            android:onClick="Grabar" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="PRESIONA PARA REPRODUCIR"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="normal|bold" />
+
+        <Button
+            android:id="@+id/btnReproducir"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:layout_marginStart="125dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/reproducir"
+            android:onClick="Reproducir" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
